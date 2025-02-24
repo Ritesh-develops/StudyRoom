@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { Outlet } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { useAuthStore } from './store/authStore'
+import Footer from './components/Footer'
 
 function Layout() {
 
@@ -24,6 +25,9 @@ function Layout() {
         </div>
         <div>
             <Outlet/>
+        </div>
+        <div>
+          <Footer/>
         </div>
     </div>
     

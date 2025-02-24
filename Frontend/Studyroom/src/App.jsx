@@ -5,6 +5,7 @@ import Signup from "./Pages/Signup"
 import AddBook from "./Pages/AddBook"
 import RedirectAuthenticated from "./providers/RedirectAuthenticated"
 import RedirectUnauthenticated from "./providers/RedirectUnauthenticated"
+import Homepage from "./Pages/Homepage"
 
 function App() {
   
@@ -15,6 +16,10 @@ function App() {
       path: '/',
       element: <Layout/>, 
       children: [
+        {
+          path: "/",
+          element: <Homepage/>
+        },
         {
           path:'/login',
           element: <RedirectAuthenticated><Login/></RedirectAuthenticated>
